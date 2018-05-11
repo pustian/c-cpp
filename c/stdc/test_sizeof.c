@@ -1,10 +1,10 @@
 #include<stdio.h>
 
 struct struct_sizeof{
-    char ch[0]; // sizeof =0
     int a;
     int b;
     char *charr;
+    char ch[0]; // sizeof =0
 };
 int main() {
     printf("char: %d\n", sizeof(char));
@@ -37,12 +37,17 @@ int main() {
     int arrint1[9];
     printf("array 0 int: %d\n", sizeof(arrint0));
     printf("array 9 int: %d\n", sizeof(arrint1));
+    printf("array size int: %d\n", sizeof(arrint1)/sizeof(int));
     
-    printf("%d\n",sizeof(struct struct_sizeof));
-    printf("%d\n",sizeof(int));
     struct struct_sizeof var_struct;
-    printf("%d\n",sizeof(var_struct.ch));
-    printf("%d\n",sizeof(var_struct.charr));
+    printf("struct %d\n",sizeof(struct struct_sizeof));
+    printf("// 结构体定义：\n");
+    printf("// struct struct_sizeof{\n");
+    printf("//     int a;           \n");
+    printf("//     int b;           \n");
+    printf("//     char *charr;     \n");
+    printf("//     char ch[0];      \n");
+    printf("// };                   \n");
     
     printf("'hello world':%d\n",sizeof("hello world"));
     char *helloworld = "hello world";
@@ -53,5 +58,7 @@ int main() {
     printf("size_t:%d\n", sizeof(size_t) );
     printf("ssize_t:%d\n", sizeof(ssize_t) );
 
+    printf("ino_t:%d\n", sizeof(long));
+    printf("off_t:%d\n", sizeof(off_t));
     return 0;
 }
