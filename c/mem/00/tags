@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+_DEFAULT_BLOCK_SIZE	patch_malloc_0.h	/^const size_t _DEFAULT_BLOCK_SIZE = 4*1024; \/\/ 默认内存块4k$/;"	v
+_MAX_PATCH_SIZE	patch_malloc_0.h	/^const size_t _MAX_PATCH_SIZE = 1024; \/\/ 最多碎片化1k内存. $/;"	v
+__PATCH_MALLOC_H_	patch_malloc_0.h	2;"	d
+_locate_pos	patch_malloc_0.c	/^static int _locate_pos(void *ptr) {$/;"	f	file:	signature:(void *ptr)
+_patch_malloc_head	patch_malloc_0.h	/^typedef struct _patch_malloc_head {$/;"	s
+_patch_malloc_head::patch_size	patch_malloc_0.h	/^    size_t patch_size;                \/\/ 内存块大小 <= _MAX_PATCH_SIZE$/;"	m	struct:_patch_malloc_head	access:public
+_patch_malloc_head::ptr_patch_malloc	patch_malloc_0.h	/^    patch_malloc_t *ptr_patch_malloc; \/\/ 内存结构起始地址$/;"	m	struct:_patch_malloc_head	access:public
+_patch_malloc_t	patch_malloc_0.h	/^typedef struct _patch_malloc_t {$/;"	s
+_patch_malloc_t::data	patch_malloc_0.h	/^    void *data;          \/\/ 4k内存起始地址$/;"	m	struct:_patch_malloc_t	access:public
+_patch_malloc_t::mapping	patch_malloc_0.h	/^    uint32_t mapping;    \/\/ 使用mapping 2^12 = 4K, 也可以改为 uint16_t. 监测使用情况$/;"	m	struct:_patch_malloc_t	access:public
+_patch_malloc_t::used_byte	patch_malloc_0.h	/^    size_t used_byte;    \/\/ 使用字节数, <= _DEFAULT_BLOCK_SIZE$/;"	m	struct:_patch_malloc_t	access:public
+data	patch_malloc_0.h	/^    void *data;          \/\/ 4k内存起始地址$/;"	m	struct:_patch_malloc_t	access:public
+destory_patch_malloc	patch_malloc_0.c	/^void destory_patch_malloc() {$/;"	f
+destory_patch_malloc	patch_malloc_0.h	/^int destory_patch_malloc(int is_small);$/;"	p	signature:(int is_small)
+init_patch_malloc	patch_malloc_0.c	/^int init_patch_malloc() {$/;"	f
+init_patch_malloc	patch_malloc_0.h	/^int init_patch_malloc(int is_samll);$/;"	p	signature:(int is_samll)
+mapping	patch_malloc_0.h	/^    uint32_t mapping;    \/\/ 使用mapping 2^12 = 4K, 也可以改为 uint16_t. 监测使用情况$/;"	m	struct:_patch_malloc_t	access:public
+patch_free	patch_malloc_0.c	/^int patch_free(void *ptr) {$/;"	f	signature:(void *ptr)
+patch_free	patch_malloc_0.h	/^int patch_free(void *ptr, size_t num);$/;"	p	signature:(void *ptr, size_t num)
+patch_malloc	patch_malloc_0.c	/^int patch_malloc(void *ptr, size_t num) {$/;"	f	signature:(void *ptr, size_t num)
+patch_malloc	patch_malloc_0.h	/^int patch_malloc(void *ptr, size_t num);$/;"	p	signature:(void *ptr, size_t num)
+patch_malloc_head	patch_malloc_0.h	/^}patch_malloc_head;$/;"	t	typeref:struct:_patch_malloc_head
+patch_malloc_t	patch_malloc_0.h	/^}patch_malloc_t;$/;"	t	typeref:struct:_patch_malloc_t
+patch_size	patch_malloc_0.h	/^    size_t patch_size;                \/\/ 内存块大小 <= _MAX_PATCH_SIZE$/;"	m	struct:_patch_malloc_head	access:public
+ptr_head	patch_malloc_0.c	/^patch_malloc_head ptr_head;$/;"	v
+ptr_patch_malloc	patch_malloc_0.h	/^    patch_malloc_t *ptr_patch_malloc; \/\/ 内存结构起始地址$/;"	m	struct:_patch_malloc_head	access:public
+used_byte	patch_malloc_0.h	/^    size_t used_byte;    \/\/ 使用字节数, <= _DEFAULT_BLOCK_SIZE$/;"	m	struct:_patch_malloc_t	access:public
