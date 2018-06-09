@@ -1,5 +1,5 @@
-#ifndef __MALLOC_0_1_H_
-#define __MALLOC_0_1_H_
+#ifndef __MALLOC_2_H_
+#define __MALLOC_2_H_
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -33,7 +33,8 @@ typedef struct _malloc_head {
     size_t p_size;                // 内存块大小 <= _MAX_PATCH_SIZE
 }malloc_head_t;
 
-extern malloc_head_t *ptr_head;
+extern malloc_head_t *ptr_head; 
+
 // 开始时调用
 int init_malloc();
 // 程序结束时调用
@@ -43,5 +44,5 @@ void *p_malloc(size_t num);
 // 取消
 int p_free(const void *ptr);
 
-#endif /* __MALLOC_0_1_H_ */
+#endif /* __MALLOC_2_H_ */
 

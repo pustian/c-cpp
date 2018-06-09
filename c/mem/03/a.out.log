@@ -1,0 +1,441 @@
+
+test00
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:40:init_patch_malloc():++++++ init_patch_malloc begin
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:61:init_patch_malloc():++++++ init_patch_malloc end
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x1641060
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x1641074
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x1641088
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x164109c
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x16410b0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:101:patch_free():++++++ patch_free begin ptr = 0x1641088
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:111:patch_free():++++++ patch_free end
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 14
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=14
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x1641088
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:101:patch_free():++++++ patch_free begin ptr = 0x164109c
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=14
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=14
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:111:patch_free():++++++ patch_free end
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 15
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=14
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=14
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=15
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x164109c
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:68:destory_patch_malloc():++++++ destory_patch_malloc begin
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=14
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=15
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:71:destory_patch_malloc():++++++ destory_patch_malloc end
+
+test01
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:40:init_patch_malloc():++++++ init_patch_malloc begin
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:61:init_patch_malloc():++++++ init_patch_malloc end
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x1641060
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x1641074
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x1641088
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_mERROR: 5 block are using, modified the _MAX_PATCH_SIZE at header
+alloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x164109c
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x16410b0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 4
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=(nil)
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:101:patch_free():++++++ patch_free begin ptr = 0x1641088
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:111:patch_free():++++++ patch_free end
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 4
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=4
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x1641088
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:68:destory_patch_malloc():++++++ destory_patch_malloc begin
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=19
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=20
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=4
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=2
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=3
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:71:destory_patch_malloc():++++++ destory_patch_malloc end
+
+test02
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:40:init_patch_malloc():++++++ init_patch_malloc begin
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:61:init_patch_malloc():++++++ init_patch_malloc end
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x1641060
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x1641060
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:101:patch_free():++++++ patch_free begin ptr = 0x1641060
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=1
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:111:patch_free():++++++ patch_free end
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:101:patch_free():++++++ patch_free begin ptr = 0x1641060
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:111:patch_free():++++++ patch_free end
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:68:destory_patch_malloc():++++++ destory_patch_malloc begin
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:71:destory_patch_malloc():++++++ destory_patch_malloc end
+
+test03
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:40:init_patch_malloc():++++++ init_patch_malloc begin
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:61:init_patch_malloc():++++++ init_patch_malloc end
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 21
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=(nil)
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:68:destory_patch_malloc():++++++ destory_patch_malloc begin
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:71:destory_patch_malloc():++++++ destory_patch_malloc end
+
+test04
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:40:init_patch_malloc():++++++ init_patch_malloc begin
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:61:init_patch_malloc():++++++ init_patch_malloc end
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:76:patch_malloc():++++++ patch_malloc begin num = 12
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=12
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:94:patch_malloc():++++++ patch_malloc end result=0x1641060
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:101:patch_free():++++++ patch_free begin ptr = 0x1641060
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=12
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:111:patch_free():++++++ patch_free end
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:101:patch_free():++++++ patch_free begin ptr = 0x1641060
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:111:patch_free():++++++ patch_free end
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:68:destory_patch_malloc():++++++ destory_patch_malloc begin
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:19:monitor():ptr_head=0x602090 patch_size=5 ptr_patch_malloc=0x1641010
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=0 ptr_patch_malloc->data=0x1641060  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=1 ptr_patch_malloc->data=0x1641074  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=2 ptr_patch_malloc->data=0x1641088  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=3 ptr_patch_malloc->data=0x164109c  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:24:monitor():index=4 ptr_patch_malloc->data=0x16410b0  ptr_patch_malloc=>used_bytes=0
+DEBUG 13:40:29 Jun  6 2018 patch_malloc_0.c:71:destory_patch_malloc():++++++ destory_patch_malloc end

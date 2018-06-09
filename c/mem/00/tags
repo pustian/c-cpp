@@ -4,30 +4,51 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-_DEFAULT_BLOCK_SIZE	patch_malloc_0.h	/^const size_t _DEFAULT_BLOCK_SIZE = 4*1024; \/\/ 默认内存块4k$/;"	v
-_MAX_PATCH_SIZE	patch_malloc_0.h	/^const size_t _MAX_PATCH_SIZE = 1024; \/\/ 最多碎片化1k内存. $/;"	v
-__PATCH_MALLOC_H_	patch_malloc_0.h	2;"	d
-_locate_pos	patch_malloc_0.c	/^static int _locate_pos(void *ptr) {$/;"	f	file:	signature:(void *ptr)
-_patch_malloc_head	patch_malloc_0.h	/^typedef struct _patch_malloc_head {$/;"	s
-_patch_malloc_head::patch_size	patch_malloc_0.h	/^    size_t patch_size;                \/\/ 内存块大小 <= _MAX_PATCH_SIZE$/;"	m	struct:_patch_malloc_head	access:public
-_patch_malloc_head::ptr_patch_malloc	patch_malloc_0.h	/^    patch_malloc_t *ptr_patch_malloc; \/\/ 内存结构起始地址$/;"	m	struct:_patch_malloc_head	access:public
-_patch_malloc_t	patch_malloc_0.h	/^typedef struct _patch_malloc_t {$/;"	s
-_patch_malloc_t::data	patch_malloc_0.h	/^    void *data;          \/\/ 4k内存起始地址$/;"	m	struct:_patch_malloc_t	access:public
-_patch_malloc_t::mapping	patch_malloc_0.h	/^    uint32_t mapping;    \/\/ 使用mapping 2^12 = 4K, 也可以改为 uint16_t. 监测使用情况$/;"	m	struct:_patch_malloc_t	access:public
-_patch_malloc_t::used_byte	patch_malloc_0.h	/^    size_t used_byte;    \/\/ 使用字节数, <= _DEFAULT_BLOCK_SIZE$/;"	m	struct:_patch_malloc_t	access:public
-data	patch_malloc_0.h	/^    void *data;          \/\/ 4k内存起始地址$/;"	m	struct:_patch_malloc_t	access:public
-destory_patch_malloc	patch_malloc_0.c	/^void destory_patch_malloc() {$/;"	f
-destory_patch_malloc	patch_malloc_0.h	/^int destory_patch_malloc(int is_small);$/;"	p	signature:(int is_small)
-init_patch_malloc	patch_malloc_0.c	/^int init_patch_malloc() {$/;"	f
-init_patch_malloc	patch_malloc_0.h	/^int init_patch_malloc(int is_samll);$/;"	p	signature:(int is_samll)
-mapping	patch_malloc_0.h	/^    uint32_t mapping;    \/\/ 使用mapping 2^12 = 4K, 也可以改为 uint16_t. 监测使用情况$/;"	m	struct:_patch_malloc_t	access:public
-patch_free	patch_malloc_0.c	/^int patch_free(void *ptr) {$/;"	f	signature:(void *ptr)
-patch_free	patch_malloc_0.h	/^int patch_free(void *ptr, size_t num);$/;"	p	signature:(void *ptr, size_t num)
-patch_malloc	patch_malloc_0.c	/^int patch_malloc(void *ptr, size_t num) {$/;"	f	signature:(void *ptr, size_t num)
-patch_malloc	patch_malloc_0.h	/^int patch_malloc(void *ptr, size_t num);$/;"	p	signature:(void *ptr, size_t num)
-patch_malloc_head	patch_malloc_0.h	/^}patch_malloc_head;$/;"	t	typeref:struct:_patch_malloc_head
-patch_malloc_t	patch_malloc_0.h	/^}patch_malloc_t;$/;"	t	typeref:struct:_patch_malloc_t
-patch_size	patch_malloc_0.h	/^    size_t patch_size;                \/\/ 内存块大小 <= _MAX_PATCH_SIZE$/;"	m	struct:_patch_malloc_head	access:public
-ptr_head	patch_malloc_0.c	/^patch_malloc_head ptr_head;$/;"	v
-ptr_patch_malloc	patch_malloc_0.h	/^    patch_malloc_t *ptr_patch_malloc; \/\/ 内存结构起始地址$/;"	m	struct:_patch_malloc_head	access:public
-used_byte	patch_malloc_0.h	/^    size_t used_byte;    \/\/ 使用字节数, <= _DEFAULT_BLOCK_SIZE$/;"	m	struct:_patch_malloc_t	access:public
+DEBUG	malloc_0_1.h	6;"	d
+_DEFAULT_BLOCK_SIZE	malloc_0_1.h	/^const size_t _DEFAULT_BLOCK_SIZE = 4*1024; \/\/ 默认内存块4k$/;"	v
+_DEFAULT_BLOCK_SIZE	malloc_0_1.h	/^const size_t _DEFAULT_BLOCK_SIZE=20;$/;"	v
+_MAX_PATCH_SIZE	malloc_0_1.h	/^const size_t _MAX_PATCH_SIZE = 1024; \/\/ 最多碎片化1k内存. $/;"	v
+_MAX_PATCH_SIZE	malloc_0_1.h	/^const size_t _MAX_PATCH_SIZE = 5;$/;"	v
+__MALLOC_0_1_H_	malloc_0_1.h	2;"	d
+_malloc_head	malloc_0_1.h	/^typedef struct _malloc_head {$/;"	s
+_malloc_head::p_size	malloc_0_1.h	/^    size_t p_size;                \/\/ 内存块大小 <= _MAX_PATCH_SIZE$/;"	m	struct:_malloc_head	access:public
+_malloc_head::ptr_malloc	malloc_0_1.h	/^    malloc_t *ptr_malloc; \/\/ 内存结构起始地址$/;"	m	struct:_malloc_head	access:public
+_malloc_head_t	malloc_0.c	/^malloc_head_t _malloc_head_t;$/;"	v
+_malloc_t	malloc_0_1.h	/^typedef struct _malloc_t {$/;"	s
+_malloc_t::data	malloc_0_1.h	/^    void *data;          \/\/ 4k内存起始地址$/;"	m	struct:_malloc_t	access:public
+_malloc_t::used_bytes	malloc_0_1.h	/^    size_t used_bytes;    \/\/ 使用字节数, <= _DEFAULT_BLOCK_SIZE$/;"	m	struct:_malloc_t	access:public
+data	malloc_0_1.h	/^    void *data;          \/\/ 4k内存起始地址$/;"	m	struct:_malloc_t	access:public
+destroy_malloc	malloc_0.c	/^void destroy_malloc() {$/;"	f
+destroy_malloc	malloc_0_1.c	/^void destroy_malloc(malloc_head_t *ptr_head) {$/;"	f	signature:(malloc_head_t *ptr_head)
+destroy_malloc	malloc_0_1.h	/^void destroy_malloc(malloc_head_t *ptr_head);$/;"	p	signature:(malloc_head_t *ptr_head)
+init_malloc	malloc_0.c	/^int init_malloc() {$/;"	f
+init_malloc	malloc_0_1.c	/^int init_malloc(malloc_head_t *ptr_head) {$/;"	f	signature:(malloc_head_t *ptr_head)
+init_malloc	malloc_0_1.h	/^int init_malloc(malloc_head_t *ptr_head);$/;"	p	signature:(malloc_head_t *ptr_head)
+main	malloc_0.c	/^int main() {$/;"	f
+main	malloc_0_1.c	/^int main() {$/;"	f
+malloc_head_t	malloc_0_1.h	/^}malloc_head_t;$/;"	t	typeref:struct:_malloc_head
+malloc_t	malloc_0_1.h	/^}malloc_t;$/;"	t	typeref:struct:_malloc_t
+monitor	malloc_0.c	/^static void monitor() {$/;"	f	file:
+monitor	malloc_0.c	/^static void monitor(){}$/;"	f	file:
+monitor	malloc_0_1.c	/^static void monitor(const malloc_head_t *ptr_head) {$/;"	f	file:	signature:(const malloc_head_t *ptr_head)
+monitor	malloc_0_1.c	/^static void monitor(const malloc_head_t *ptr_head){}$/;"	f	file:	signature:(const malloc_head_t *ptr_head)
+p_free	malloc_0.c	/^int p_free(const void *ptr) {$/;"	f	signature:(const void *ptr)
+p_free	malloc_0_1.c	/^int p_free(malloc_head_t *ptr_head, const void *ptr) {$/;"	f	signature:(malloc_head_t *ptr_head, const void *ptr)
+p_free	malloc_0_1.h	/^int p_free(malloc_head_t *ptr_head, const void *ptr);$/;"	p	signature:(malloc_head_t *ptr_head, const void *ptr)
+p_malloc	malloc_0.c	/^void *p_malloc(size_t num) {$/;"	f	signature:(size_t num)
+p_malloc	malloc_0_1.c	/^void *p_malloc(malloc_head_t *ptr_head, size_t num) {$/;"	f	signature:(malloc_head_t *ptr_head, size_t num)
+p_malloc	malloc_0_1.h	/^void *p_malloc(malloc_head_t *ptr_head, size_t num);$/;"	p	signature:(malloc_head_t *ptr_head, size_t num)
+p_size	malloc_0_1.h	/^    size_t p_size;                \/\/ 内存块大小 <= _MAX_PATCH_SIZE$/;"	m	struct:_malloc_head	access:public
+ptr_head	malloc_0.c	/^malloc_head_t *ptr_head=&_malloc_head_t;$/;"	v
+ptr_malloc	malloc_0_1.h	/^    malloc_t *ptr_malloc; \/\/ 内存结构起始地址$/;"	m	struct:_malloc_head	access:public
+test00	malloc_0.c	/^int test00() {$/;"	f
+test00	malloc_0_1.c	/^int test00() {$/;"	f
+test01	malloc_0.c	/^int test01() {$/;"	f
+test01	malloc_0_1.c	/^int test01() {$/;"	f
+test02	malloc_0.c	/^int test02() {$/;"	f
+test02	malloc_0_1.c	/^int test02() {$/;"	f
+test03	malloc_0.c	/^int test03() {$/;"	f
+test03	malloc_0_1.c	/^int test03() {$/;"	f
+test04	malloc_0.c	/^int test04() {$/;"	f
+test04	malloc_0_1.c	/^int test04() {$/;"	f
+used_bytes	malloc_0_1.h	/^    size_t used_bytes;    \/\/ 使用字节数, <= _DEFAULT_BLOCK_SIZE$/;"	m	struct:_malloc_t	access:public
