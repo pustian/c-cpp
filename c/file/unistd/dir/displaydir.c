@@ -33,7 +33,7 @@ void printdir(char *dirpath, int depth) {
 }
 
 int main(int argc, char *argv[]){
-    char *directory = "/home";
+    char *directory = "./";
     int depth = 0;
     if(argc > 1) {
         directory = argv[1];

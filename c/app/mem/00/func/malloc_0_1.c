@@ -39,7 +39,7 @@ static void monitor(const malloc_head_t *ptr_head){}
 // 0 成功 -1: 失败
 int init_malloc(malloc_head_t **ptr_ptr_head) {
     DEBUG("++++++ init_malloc begin");
-    malloc_head_t *ptr_head = *ptr_ptr_head;
+    malloc_head_t *ptr_head = NULL;
     ptr_head = malloc(sizeof(malloc_head_t));
     // *ptr_ptr_head = malloc(sizeof(malloc_head_t *));
     memset(ptr_head, 0x0, sizeof(malloc_head_t));
@@ -62,7 +62,7 @@ int init_malloc(malloc_head_t **ptr_ptr_head) {
          ptr_head->ptr_malloc[i].data = (char *)ptr_data + i * _DEFAULT_BLOCK_SIZE;
          // ptr_head->ptr_malloc[i].used_bytes = 0; // memset 已经为0
     }
-
+    *ptr_ptr_head = ptr_head;
     monitor(ptr_head);
     DEBUG("++++++ init_malloc end");
     return 0;
@@ -132,9 +132,7 @@ int main() {
 // normal usage 
 int test00() {
     malloc_head_t *ptr_head = NULL;
-    malloc_head_t **d_ptr_head = &ptr_head;
-    init_malloc(d_ptr_head);
-    ptr_head = *d_ptr_head;
+    init_malloc(&ptr_head);
     char *ptr19 = p_malloc(ptr_head, 19);
     char *ptr20 = p_malloc(ptr_head, 20);
     char *ptr1 = p_malloc(ptr_head, 1);
@@ -146,54 +144,54 @@ int test00() {
     
     p_free(ptr_head, ptr2);
     ptr2 = p_malloc(ptr_head, 15);
-    destroy_malloc(d_ptr_head);
+    destroy_malloc(&ptr_head);
     return 0;
 }
-// // more than _MAX_PATCH_SIZE
-// int test01() {
-//     malloc_head_t *ptr_head;
-//     init_malloc(&ptr_head);
-//     char *ptr19 = p_malloc(ptr_head, 19);
-//     char *ptr20 = p_malloc(ptr_head, 20);
-//     char *ptr1 = p_malloc(ptr_head, 1);
-//     char *ptr2 = p_malloc(ptr_head, 2);
-//     char *ptr3 = p_malloc(ptr_head, 3);
-//     char *ptr4 = p_malloc(ptr_head, 4); // ptr4 = null;
-// 
-//     p_free(ptr_head, ptr1);
-//     ptr4 = p_malloc(ptr_head, 4);
-//     destroy_malloc(&ptr_head);
-//     return 0;
-// }
-// // 申请0内存
-// int test02() {
-//     malloc_head_t *ptr_head;
-//     init_malloc(ptr_head);
-//     char *ptr0 = p_malloc(ptr_head, 0);
-//     char *ptr1 = p_malloc(ptr_head, 1);
-//     p_free(ptr_head, ptr0);
-//     p_free(ptr_head, ptr1);
-//     destroy_malloc(ptr_head);
-//     return 0;
-// }
-// // more than _DEFAULT_BLOCK_SIZE 
-// int test03() {
-//     malloc_head_t *ptr_head;
-//     init_malloc(ptr_head);
-//     char *ptr21 = p_malloc(ptr_head, 21);
-//     destroy_malloc(ptr_head);
-//     return 0;
-// }
-// //
-// int test04() {
-//     malloc_head_t *ptr_head;
-//     init_malloc(ptr_head);
-//     char *ptr12 = p_malloc(ptr_head, 12);
-//     p_free(ptr_head, ptr12);
-//     p_free(ptr_head, ptr12);
-//     destroy_malloc(ptr_head);
-//     return 0;
-// }
-// // 多线程测试, 目前应该不支持多线程
+// more than _MAX_PATCH_SIZE
+int test01() {
+    malloc_head_t *ptr_head;
+    init_malloc(&ptr_head);
+    char *ptr19 = p_malloc(ptr_head, 19);
+    char *ptr20 = p_malloc(ptr_head, 20);
+    char *ptr1 = p_malloc(ptr_head, 1);
+    char *ptr2 = p_malloc(ptr_head, 2);
+    char *ptr3 = p_malloc(ptr_head, 3);
+    char *ptr4 = p_malloc(ptr_head, 4); // ptr4 = null;
+
+    p_free(ptr_head, ptr1);
+    ptr4 = p_malloc(ptr_head, 4);
+    destroy_malloc(&ptr_head);
+    return 0;
+}
+// 申请0内存
+int test02() {
+    malloc_head_t *ptr_head;
+    init_malloc(&ptr_head);
+    char *ptr0 = p_malloc(ptr_head, 0);
+    char *ptr1 = p_malloc(ptr_head, 1);
+    p_free(ptr_head, ptr0);
+    p_free(ptr_head, ptr1);
+    destroy_malloc(&ptr_head);
+    return 0;
+}
+// more than _DEFAULT_BLOCK_SIZE 
+int test03() {
+    malloc_head_t *ptr_head;
+    init_malloc(&ptr_head);
+    char *ptr21 = p_malloc(ptr_head, 21);
+    destroy_malloc(&ptr_head);
+    return 0;
+}
+//
+int test04() {
+    malloc_head_t *ptr_head;
+    init_malloc(&ptr_head);
+    char *ptr12 = p_malloc(ptr_head, 12);
+    p_free(ptr_head, ptr12);
+    p_free(ptr_head, ptr12);
+    destroy_malloc(&ptr_head);
+    return 0;
+}
+// 多线程测试, 目前应该不支持多线程
 
 #endif

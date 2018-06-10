@@ -4,6 +4,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+// gdb 其实只是对父进程的debug
+// set follow-fork-mode child 命令设置gdb在fork之后跟踪子进程。
+// set follow-fork-mode parent设置跟踪父进程。
 int main() {
     pid_t pid;
     char *message;
@@ -18,10 +21,12 @@ int main() {
             perror("fork failed");
             exit(1);
         case 0:
+            printf("child pid pid=%u ppid=%u\n", getpid(), getppid());
             message = "This is the child";
             n = SIZE;
             break;
         default:
+            printf("parent pid pid=%u ppid=%u\n", getpid(), getppid());
             message = "This is the parent";
             n = SIZE/2;
             break;

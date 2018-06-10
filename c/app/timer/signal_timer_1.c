@@ -31,11 +31,13 @@ void init_sigaction (void) {
 }
 
 void init_time () {
-    struct itimerval value;
+    struct itimerval value, new_value;
     value.it_value.tv_sec = 2;
     value.it_value.tv_usec = 0;
-    
-    value.it_interval = value.it_value;
+
+    // value.it_interval = value.it_value;
+    value.it_interval.tv_sec = 5;
+    // value.it_interval.tv_usec= 0;
 
     /* set ITIMER_REAL */
     setitimer (ITIMER_REAL, &value, NULL);

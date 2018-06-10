@@ -10,7 +10,7 @@ int main() {
     char * message;
     char buf[128] = {0};
     int n;
-    const int SIZE =10;
+    const int SIZE =5;
     int exit_code;
 
     printf("fork program starting\n");
@@ -20,11 +20,14 @@ int main() {
             perror("fork failed");
             exit(1);
         case 0:
+            printf("child pid pid=%u ppid=%u\n", getpid(), getppid());
             message = "This is the child";
             n = SIZE;
             exit_code = 37;
+            // exit_code = 0;
             break;
         default:
+            printf("parent pid pid=%u ppid=%u\n", getpid(), getppid());
             message = "This is the parent";
             n = SIZE/2;
             exit_code = 0;
@@ -42,7 +45,7 @@ int main() {
         int stat_val;
         pid_t child_pid = wait(&stat_val);
 
-        printf("Child had finished: PID=%d\n", child_pid);
+        printf("Child had finished: PID=%d stat_val=%d\n", child_pid, stat_val);
        
         if(WIFEXITED(stat_val) ) {
             printf("Child exited with code %d\n", WEXITSTATUS(stat_val));
