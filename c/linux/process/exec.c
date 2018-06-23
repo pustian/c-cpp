@@ -5,9 +5,13 @@
 
 //* 实际上代替了现在的进程。且不会回到原来的进程空间
 void call_execl() {
+    char *path= "/home/parafs";
     printf("execl begin assues ls is in /bin\n");
-    int ret = execl("/bin/ls", "ls", "-lrt", NULL);
-    printf("execl done ret=%d, error message=%s\n", ret, strerror(errno)); // --- 将不会被打印
+    int i=0;
+    for(i=0; i<3; i++) {
+        int ret = execl("/home/parafs/workspace/c-cpp/c/linux/process/hello", "hello", NULL);
+        printf("execl done ret=%d, error message=%s\n", ret, strerror(errno)); // --- 将不会被打印
+    }
 }
 
 void call_execlp() {
@@ -55,9 +59,9 @@ void call_execve() {
     printf("execve done ret=%d, error message=%s\n", ret, strerror(errno)); // --- 将不会被打印
 }
 int main() {
-    // printf("main begin call_execl\n");
-    // call_execl();
-    // printf("main  call_execl done\n"); // --- 将不会被打印
+    printf("main begin call_execl\n");
+    call_execl();
+    printf("main  call_execl done\n"); // --- 将不会被打印
 
     // printf("main begin call_execlp\n");
     // call_execlp();
@@ -71,9 +75,9 @@ int main() {
     // call_execv();
     // printf("main  call_execv done\n"); // --- 将不会被打印
 
-    printf("main begin call_execvp\n");
-    call_execvp();
-    printf("main  call_execvp done\n"); // --- 将不会被打印
+    // printf("main begin call_execvp\n");
+    // call_execvp();
+    // printf("main  call_execvp done\n"); // --- 将不会被打印
     
     // printf("main begin call_execve\n");
     // call_execve();

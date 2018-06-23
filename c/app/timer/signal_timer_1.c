@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 /**
- *  该程序的ITMER_REAL定时器，每隔2秒钟都会发送一个SIGALRM信号，
+ *  该程序的ITIMER_REAL定时器，每隔2秒钟都会发送一个SIGALRM信号，
  *  当主函数接收到了这个信号之后，调用信号处理函数prompt_info在标准错误上输出time is running out这个字符串。
  *  对于ITIMER_VIRTUAL和ITIMER_PROF的使用方法类似，当你在setitimer里面设置的定时器为ITIMER_VIRTUAL的时候，
  *  你把sigaction里面的SIGALRM改为SIGVTALARM, 同理，ITIMER_PROF对应SIGPROF。

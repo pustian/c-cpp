@@ -1,8 +1,10 @@
 #include<stdio.h>
 
-#define STR(string) (#string)
+#define attanch(result) (##result)
+#define STR(string) (#(string))
+
 int main() {
-    puts(STR(Tian pusen));
+    puts((" OK"));
     return 0;
 }
 
