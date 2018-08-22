@@ -25,8 +25,10 @@ void __init_sigaction (void) {
 
 void __init_timer(int interval_sec) {
     struct itimerval value;
+    /* 计时器安装后首先启动的初始值 */
     value.it_value.tv_sec = 1;
     value.it_value.tv_usec = 0;
+    /* 计时器重启动的间歇值 */
     value.it_interval.tv_sec = interval_sec;
     value.it_interval.tv_usec = 0;
 
