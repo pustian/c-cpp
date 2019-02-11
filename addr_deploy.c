@@ -16,7 +16,7 @@ void show_global_area() {
     printf("global string addr2=%p val=%s\n", string2, string2);
     printf("global string addr3=%p val=%s\n", 
             "global string store in global area", 
-            "global string store in global area");
+            "global string 2 store in global area");
 }
 
 void show_heap_area() {
